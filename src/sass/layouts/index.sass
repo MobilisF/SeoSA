@@ -1,0 +1,141 @@
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+body
+	display: flex
+	justify-content: center
+	background: #dde6f0
+	font-family: 'Arial', sans-serif
+	overflow: hidden
+
+.bio
+	max-width: 999px
+	width: 100%
+	padding-top: 52px
+	//background: #C4CAC7
+	overflow: hidden
+
+.head
+	display: flex
+	align-items: center
+	max-height: 136px
+	height: 100%
+	margin-bottom: 20px
+	//background: #FFBF69
+
+.head_logo
+	display: flex
+	align-items: flex-end
+	margin-left: 18px
+
+/*Делаем заголовок шрифтом, а не картинкой*/
+.head_logo-title
+	padding: 10px 10px 8px 0
+	margin: 0 0 8px 3px
+	font:
+		family: 'Source Sans Pro', sans-serif
+		size: 0.6rem
+		weight: bold
+	letter-spacing: 0.07rem
+	color: #0b628e
+
+.head_phone
+	display: flex
+	align-items: center
+	height: 111px
+	padding: 17px 58px 17px 0
+	border-right: 1px solid #d2dbe5
+
+.head_num-pre
+	padding: 10px
+	margin: 47px 10px 10px 50px
+	font:
+		size: 1.875rem
+		weight: bold
+
+.head_hour
+	display: flex
+	flex-direction: column
+	margin-left: -12px
+
+.h-hour_after
+	padding-bottom: 7px
+	margin: 0 0 -20px 0
+	font:
+		size: 2.5rem
+		weight: bold
+	color: #006ab3
+
+/*Время записывается не через тире, а через двоеточие. В формате 11 часовых поясов в России, строка лимитированного временем телефона бессмысленна.*/
+.h-hour_work
+	padding-top: 7px
+	margin: 0 auto
+	font:
+		size: 0.875rem
+		weight: bold
+
+.head_cart
+	display: flex
+	flex-direction: column
+	position: relative
+	padding: 8px 10px 0 10px
+
+.h-cart_logo
+	position: absolute
+	top: -8px
+	right: 12px
+
+.a-cart
+	padding: 0 0 0 12px
+	color: #006ab3
+
+.c_prod,
+.c_am
+	padding: 0 0 0 12px
+
+.c_prod,
+.c_am,
+.c-product,
+.c-amount
+	font-size: 0.875rem
+
+.h-cart_purchase
+	display: flex
+	flex-direction: column
+
+.cart-item_prod,
+.cart-item_amount
+	display: flex
+
+.cart-item_prod
+	margin-bottom: -2px
+
+.cart-item_amount
+	margin-bottom: -2px
+
+
+.h-cart_cart
+	margin-bottom: 8px
+
+.h-cart_order
+	margin-top: 8px
+
+
+
+
+
+
+
+
+.nav
+	margin: 20px 0 10px 0
+	background: #33DDB1
+
+.nav_main
+	display: flex
+
+.main-nav_home-sub
+	display: none
+	background: #8DECD3

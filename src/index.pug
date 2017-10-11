@@ -1,0 +1,70 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+	head(lang="en")
+		include pug/metatags.pug
+		+title('Test task for SeoSA')
+		include pug/styles.pug
+		link(href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet")
+	body
+		include pug/svg.pug
+
+		.bio
+			header.head
+				.head_logo
+					img.logo-img(src="images/head_logo.png" alt="")
+					.head_logo-title Ваш рецепт природной красоты
+				.head_phone
+					.head_num-pre 8 (800)
+					.head_hour.h-hour
+						.h-hour_after 555 - 55 - 55
+						.h-hour_work Ежедневно с 9:00 до 19:00
+				.head_cart.h-cart
+					.h-cart_logo
+						img.cart-img(src="images/head_cart.png" alt="")
+					.h-cart_cart
+						a.a-cart(href="#") Корзина
+					.h-cart_purchase.cart-item
+						.cart-item_prod
+							.c_prod Товаров:
+							.c-product#cart-product 0
+						.cart-item_amount
+							.c_am На сумму:
+							.c-amount#cart-amount 0
+					.h-cart_order
+						a.a-cart(href="#") Оформить заказ
+
+			nav.nav
+				ul.nav_main.main-nav
+					li.main-nav_home
+						a.n-home(href="#") Главная
+						ul.main-nav_home-sub
+							li.clean
+								a.n-sub(href="#") Очищение
+							li.classic
+								a.n-sub(href="#") Для лица classic
+							li.premium
+								a.n-sub(href="#") Для лицы premium
+							li.body
+								a.n-sub(href="#") Для тела
+					li.main-nav_receipts
+						a.n-home(href="#") Новые поступления
+					li.main-nav_shares
+						a.n-home(href="#") Акции
+					li.main-nav_acsess
+						a.n-home(href="#") Аксессуары
+					li.main-nav_delivery
+						a.n-home(href="#") Оплата и доставка
+					li.main-nav_articles
+						a.n-home(href="#") Статьи
+					li.main-nav_about
+						a.n-home(href="#") О нас
+					
+				.nav_sub.sub-nav
+					
+
+
+
+		include pug/scripts.pug
